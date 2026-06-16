@@ -567,76 +567,44 @@
 </section>
 
 <!-- ════════ 17.2 · diVENUO — LÓGICA A MEDIDA · TATTOOS ════════ -->
-<section data-label="diVenuo · Lógica a medida" data-screen-label="diVenuo · Tattoos" data-speaker-notes="El segundo desafío técnico es la lógica a medida: no toda reserva es 'elegí servicio y horario'. En diVenuo Tattoos el cliente marca en un mapa corporal interactivo dónde se quiere tatuar, y cada consulta arranca un código de sesión único para retomar el diseño después. Modelar ese flujo es lo difícil. Mostrá el antes/después: la primera versión era un muñeco tosco; iterando con IA llegamos a una silueta clara y usable." style="display:flex;flex-direction:column;padding:78px 104px 84px;background:#161616;color:#F4F1EA;font-family:'IBM Plex Sans',system-ui,sans-serif;overflow:hidden;">
+<section data-label="diVenuo · Lógica a medida" data-screen-label="diVenuo · Tattoos" data-speaker-notes="El segundo desafío técnico es la lógica a medida: no toda reserva es 'elegí servicio y horario'. En diVenuo Tattoos el cliente marca en un mapa corporal interactivo dónde se quiere tatuar, y cada consulta arranca un código de sesión único para retomar el diseño después. Modelar ese flujo es lo difícil. Mostrá el antes/después: la primera versión era un muñeco tosco y bloques; iterando con IA llegamos a una silueta anatómica y usable. Contá el combo de herramientas: la ilustración del cuerpo la generé con Nano Banana (el modelo de imágenes de Gemini) y las zonas interactivas las armé en SVG con Claude Code. Es un buen ejemplo de combinar varias IAs para un mismo resultado." style="display:flex;flex-direction:column;padding:78px 104px 84px;background:#161616;color:#F4F1EA;font-family:'IBM Plex Sans',system-ui,sans-serif;overflow:hidden;">
   <div style="position:absolute;width:840px;height:840px;border-radius:50%;bottom:-360px;right:-240px;background:radial-gradient(circle,rgba(168,116,224,0.18),transparent 64%);pointer-events:none;"></div>
   <div style="display:flex;align-items:center;gap:13px;position:relative;z-index:1;">
     <img src="assets/aic_logo_transparente.png" style="width:30px;height:30px;display:block;">
     <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.22em;text-transform:uppercase;color:#B6AE9C;">Caso 2 · Lógica a medida</span>
   </div>
   <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:74px;line-height:1.05;letter-spacing:-0.02em;margin:34px 0 0;position:relative;z-index:1;">Flujos a medida — <span style="color:#C1A062;">diVenuo Tattoos</span></h2>
-  <div style="flex:1;display:flex;align-items:center;gap:64px;position:relative;z-index:1;margin-top:20px;">
-    <div style="flex:1.15;">
-      <p style="font-size:33px;line-height:1.4;color:#C9C2B4;margin:0 0 38px;max-width:680px;">No toda reserva es “servicio + horario”. A veces el flujo es <span style="color:#F4F1EA;font-weight:600;">raro y propio del negocio</span> — y hay que modelarlo.</p>
-      <div style="display:flex;flex-direction:column;gap:20px;">
-        <div style="display:flex;align-items:flex-start;gap:24px;padding:26px 30px;border-radius:16px;background:rgba(193,160,98,0.10);border:1px solid rgba(193,160,98,0.3);">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#C1A062;font-weight:600;flex-shrink:0;">01</span>
-          <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;margin-bottom:6px;">Mapa corporal interactivo</div><div style="font-size:25px;color:#C9C2B4;line-height:1.4;">El cliente marca en el cuerpo dónde quiere el tatuaje.</div></div>
+  <div style="flex:1;display:flex;align-items:center;gap:56px;position:relative;z-index:1;margin-top:18px;">
+    <div style="flex:0.82;">
+      <p style="font-size:31px;line-height:1.4;color:#C9C2B4;margin:0 0 30px;max-width:640px;">No toda reserva es “servicio + horario”. Acá el flujo es <span style="color:#F4F1EA;font-weight:600;">propio del negocio</span> — y hay que modelarlo.</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;align-items:flex-start;gap:22px;padding:22px 28px;border-radius:16px;background:rgba(193,160,98,0.10);border:1px solid rgba(193,160,98,0.3);">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:25px;color:#C1A062;font-weight:600;flex-shrink:0;">01</span>
+          <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:28px;margin-bottom:4px;">Mapa corporal interactivo</div><div style="font-size:24px;color:#C9C2B4;line-height:1.4;">El cliente marca en el cuerpo dónde quiere el tatuaje.</div></div>
         </div>
-        <div style="display:flex;align-items:flex-start;gap:24px;padding:26px 30px;border-radius:16px;background:rgba(193,160,98,0.10);border:1px solid rgba(193,160,98,0.3);">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#C1A062;font-weight:600;flex-shrink:0;">02</span>
-          <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;margin-bottom:6px;">Código de sesión</div><div style="font-size:25px;color:#C9C2B4;line-height:1.4;">Cada consulta abre un link único para retomar el diseño.</div></div>
+        <div style="display:flex;align-items:flex-start;gap:22px;padding:22px 28px;border-radius:16px;background:rgba(193,160,98,0.10);border:1px solid rgba(193,160,98,0.3);">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:25px;color:#C1A062;font-weight:600;flex-shrink:0;">02</span>
+          <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:28px;margin-bottom:4px;">Código de sesión</div><div style="font-size:24px;color:#C9C2B4;line-height:1.4;">Cada consulta abre un link único para retomar el diseño.</div></div>
         </div>
       </div>
-      <p style="font-size:26px;color:#B6AE9C;margin:34px 0 0;line-height:1.45;">De un muñeco tosco a una silueta clara — <span style="color:#C1A062;font-weight:600;">iterando con IA.</span></p>
+      <div style="margin-top:28px;padding:26px 28px;border-radius:16px;background:rgba(168,116,224,0.10);border:1px solid rgba(168,116,224,0.34);">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:21px;letter-spacing:0.14em;text-transform:uppercase;color:#B79BE6;margin-bottom:18px;">Cómo lo iteramos</div>
+        <div style="display:flex;flex-direction:column;gap:14px;font-size:24px;line-height:1.4;">
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:11px;height:11px;border-radius:50%;background:#7FA8E0;flex-shrink:0;"></span><span><span style="color:#F4F1EA;font-weight:600;">Nano Banana</span> <span style="color:#9890A6;">(Gemini)</span> ilustra el cuerpo</span></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:11px;height:11px;border-radius:50%;background:#C1A062;flex-shrink:0;"></span><span><span style="color:#F4F1EA;font-weight:600;">Claude Code</span> genera las zonas en SVG interactivo</span></div>
+        </div>
+      </div>
     </div>
-    <div style="flex:0.85;display:flex;justify-content:center;align-items:center;">
-      <svg viewBox="0 0 380 720" width="auto" height="640" style="max-height:640px;filter:drop-shadow(0 30px 70px rgba(0,0,0,0.6));" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="diVenuo Tattoos — mapa corporal interactivo">
-        <defs>
-          <linearGradient id="tt-screen" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#1A1622"/><stop offset="1" stop-color="#120F19"/>
-          </linearGradient>
-          <filter id="tt-glow" x="-40%" y="-40%" width="180%" height="180%">
-            <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-          </filter>
-        </defs>
-        <!-- phone -->
-        <rect x="2" y="2" width="376" height="716" rx="46" fill="#070707" stroke="rgba(193,160,98,0.22)" stroke-width="2"/>
-        <rect x="14" y="14" width="352" height="692" rx="34" fill="url(#tt-screen)"/>
-        <!-- header -->
-        <circle cx="44" cy="50" r="9" fill="none" stroke="#C1A062" stroke-width="2"/><circle cx="44" cy="50" r="3" fill="#C1A062"/>
-        <text x="62" y="55" font-family="'Space Grotesk',sans-serif" font-size="16" font-weight="600" fill="#EDE9F2">Yügen — Tattoo Studio</text>
-        <text x="38" y="92" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.5" fill="#7E768F">PASO 1 DE 5</text>
-        <text x="342" y="92" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.5" fill="#A07BE8">ZONA</text>
-        <rect x="38" y="104" width="304" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-        <rect x="38" y="104" width="62" height="4" rx="2" fill="#A07BE8"/>
-        <!-- title -->
-        <text x="38" y="146" font-family="'Space Grotesk',sans-serif" font-size="23" font-weight="600" fill="#F4F1F8">¿Dónde te lo querés hacer?</text>
-        <text x="38" y="174" font-family="'IBM Plex Sans',sans-serif" font-size="13" fill="#9890A6">Elegí una o más zonas en el mapa.</text>
-        <!-- toggle -->
-        <rect x="38" y="192" width="84" height="34" rx="17" fill="#A07BE8"/>
-        <text x="80" y="214" text-anchor="middle" font-family="'IBM Plex Sans',sans-serif" font-size="14" font-weight="600" fill="#1A1622">Frente</text>
-        <rect x="130" y="192" width="90" height="34" rx="17" fill="none" stroke="rgba(255,255,255,0.16)"/>
-        <text x="175" y="214" text-anchor="middle" font-family="'IBM Plex Sans',sans-serif" font-size="14" fill="#9890A6">Espalda</text>
-        <!-- body silhouette -->
-        <g fill="#322C40">
-          <ellipse cx="190" cy="288" rx="25" ry="29"/>
-          <rect x="181" y="314" width="18" height="16" rx="6"/>
-          <path d="M150 338 C150 330 162 327 190 327 C218 327 230 330 230 338 L224 432 C224 444 214 449 190 449 C166 449 156 444 156 432 Z"/>
-          <rect x="120" y="338" width="22" height="150" rx="11"/>
-          <rect x="238" y="338" width="22" height="150" rx="11"/>
-          <rect x="160" y="446" width="27" height="196" rx="13"/>
-          <rect x="193" y="446" width="27" height="196" rx="13"/>
-        </g>
-        <!-- selected zones -->
-        <g filter="url(#tt-glow)" fill="rgba(160,123,232,0.34)" stroke="#A07BE8" stroke-width="2">
-          <rect x="158" y="346" width="64" height="44" rx="14"/>
-          <rect x="238" y="404" width="22" height="74" rx="11"/>
-          <rect x="160" y="470" width="27" height="96" rx="13"/>
-        </g>
-        <!-- CTA -->
-        <rect x="38" y="636" width="304" height="46" rx="23" fill="#A07BE8"/>
-        <text x="190" y="664" text-anchor="middle" font-family="'IBM Plex Sans',sans-serif" font-size="16" font-weight="600" fill="#160F22">Continuar</text>
-      </svg>
+    <div style="flex:1.18;display:flex;align-items:center;justify-content:center;gap:30px;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:0.18em;text-transform:uppercase;color:#8E8678;">Antes</span>
+        <img src="assets/divenuo_bodymap_antes.jpeg" alt="Mapa corporal — primera versión, tosca" style="height:540px;border-radius:26px;display:block;border:1px solid rgba(255,255,255,0.10);box-shadow:0 24px 60px rgba(0,0,0,0.5);opacity:0.85;">
+      </div>
+      <span style="font-size:54px;color:#A07BE8;flex-shrink:0;align-self:center;margin-top:38px;">→</span>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:23px;letter-spacing:0.18em;text-transform:uppercase;color:#C1A062;">Después</span>
+        <img src="assets/divenuo_bodymap_despues.jpeg" alt="Mapa corporal — versión final, anatómica" style="height:540px;border-radius:26px;display:block;border:2px solid rgba(168,116,224,0.55);box-shadow:0 28px 70px rgba(168,116,224,0.28);">
+      </div>
     </div>
   </div>
 </section>
