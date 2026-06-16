@@ -657,33 +657,54 @@
 </section>
 
 <!-- ════════ 18 · CASO 2.1 · CÓMO LA IA ACELERÓ ════════ -->
-<section data-label="Caso 2.1 — La IA al lado" data-screen-label="Caso 2.1 · La IA al lado" data-speaker-notes="Caso 2.1: el vistazo de código. No escribí estos módulos línea por línea solo. Le describí el flujo al asistente de IA en la terminal, propuso el componente, yo lo ajusté y lo probé en vivo — el mismo ciclo de pensar/actuar/observar de un agente, pero conmigo en el medio decidiendo. La IA no reemplaza entender el problema: lo acelera. Esa es la idea que quiero que se lleven." style="display:flex;flex-direction:column;padding:78px 104px 84px;background:#F4F6FB;color:#0E1424;font-family:'IBM Plex Sans',system-ui,sans-serif;overflow:hidden;">
+<section data-label="Caso 2.1 — Mi forma de trabajar" data-screen-label="Caso 2.1 · Mi forma de trabajar" data-speaker-notes="Caso 2.1: acá doy yo el mensaje de cómo me ayudó la IA. Lo importante que quiero transmitir con esta slide: en diVenuo soy muy estricto y específico. No le pido al agente 'hacé un mapa corporal' a secas; le doy un spec preciso, con requisitos no negociables (nombres exactos, estados, accesibilidad, 1:1 con el diseño al pixel). Y después reviso sin piedad: si no cumple, lo mando a rehacer, las veces que haga falta. Recién cuando pasa todos mis criterios lo apruebo. El agente acelera, pero el estándar lo pongo yo." style="display:flex;flex-direction:column;padding:78px 104px 84px;background:#F4F6FB;color:#0E1424;font-family:'IBM Plex Sans',system-ui,sans-serif;overflow:hidden;">
   <div style="position:absolute;width:720px;height:720px;border-radius:50%;bottom:-320px;left:-220px;background:radial-gradient(circle,rgba(193,160,98,0.16),transparent 62%);pointer-events:none;"></div>
   <div style="display:flex;align-items:center;gap:13px;position:relative;z-index:1;">
     <img src="assets/aic_logo_transparente.png" style="width:30px;height:30px;display:block;">
-    <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.22em;text-transform:uppercase;color:#5C6880;">Caso 2.1 · La IA al lado</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.22em;text-transform:uppercase;color:#5C6880;">Caso 2.1 · Mi forma de trabajar</span>
   </div>
-  <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:74px;line-height:1.05;letter-spacing:-0.02em;margin:34px 0 0;position:relative;z-index:1;">¿Cómo me ayudó la IA acá?</h2>
-  <div style="flex:1;display:flex;align-items:center;gap:60px;position:relative;z-index:1;margin-top:18px;">
-    <div style="flex:1.08;border-radius:18px;background:#0E0E0E;overflow:hidden;border:1px solid rgba(193,160,98,0.28);box-shadow:0 26px 64px rgba(0,0,0,0.4);font-family:'IBM Plex Mono',monospace;">
-      <div style="display:flex;align-items:center;gap:9px;padding:16px 22px;background:#161616;border-bottom:1px solid rgba(255,255,255,0.07);">
-        <span style="width:12px;height:12px;border-radius:50%;background:#C1A062;"></span>
-        <span style="width:12px;height:12px;border-radius:50%;background:#6E6656;"></span>
-        <span style="width:12px;height:12px;border-radius:50%;background:#3A3631;"></span>
-        <span style="margin-left:14px;font-size:22px;color:#8A8270;">divenuo — terminal</span>
+  <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:74px;line-height:1.05;letter-spacing:-0.02em;margin:34px 0 4px;position:relative;z-index:1;">El estándar lo pongo <span style="color:#B08544;">yo</span></h2>
+  <p style="font-size:30px;color:#5A6276;margin:0;position:relative;z-index:1;">El agente acelera; yo decido qué entra. Específico al pedir, estricto al revisar.</p>
+  <div style="flex:1;display:flex;align-items:stretch;gap:44px;position:relative;z-index:1;margin-top:30px;">
+    <!-- LEFT · spec -->
+    <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:0.14em;text-transform:uppercase;color:#161616;background:#C1A062;padding:8px 18px;border-radius:100px;font-weight:600;">Lo que pido</span>
+        <span style="font-size:24px;color:#67728A;">específico al detalle</span>
       </div>
-      <div style="padding:34px 32px;font-size:24px;line-height:1.65;">
-        <div style="color:#C1A062;">tú ▸</div>
-        <div style="color:#E7E2D6;margin:6px 0 24px;">“Sumá un mapa corporal donde el cliente<br>elija zonas, y un código de sesión por consulta.”</div>
-        <div style="color:#7FA8E0;">IA ▸</div>
-        <div style="color:#7FB98A;margin-top:6px;">› propongo componente &lt;BodyMap/&gt; …<br>› ruta /sesion/:codigo …<br>› lo conecto a las reservas ✓</div>
+      <div style="flex:1;border-radius:18px;background:#0E0E0E;overflow:hidden;border:1px solid rgba(193,160,98,0.28);box-shadow:0 24px 60px rgba(14,20,36,0.16);font-family:'IBM Plex Mono',monospace;display:flex;flex-direction:column;">
+        <div style="display:flex;align-items:center;gap:9px;padding:15px 22px;background:#161616;border-bottom:1px solid rgba(255,255,255,0.07);">
+          <span style="width:11px;height:11px;border-radius:50%;background:#C1A062;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#6E6656;"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#3A3631;"></span>
+          <span style="margin-left:14px;font-size:21px;color:#8A8270;">spec / BodyMap.md</span>
+        </div>
+        <div style="padding:28px 30px;font-size:23px;line-height:1.85;color:#D7CFBD;flex:1;">
+          <div style="margin-bottom:14px;"><span style="color:#C1A062;"># Requisitos</span> <span style="color:#E08585;">— no negociables</span></div>
+          <div>— 17 zonas, con los nombres <span style="color:#F4F1EA;">exactos</span> del catálogo</div>
+          <div>— estados: normal · hover · seleccionada</div>
+          <div>— navegable con teclado</div>
+          <div>— mobile-first, sin librerías de más</div>
+          <div>— 1:1 con el diseño <span style="color:#F4F1EA;">— al pixel</span></div>
+        </div>
       </div>
     </div>
-    <div style="flex:0.92;display:flex;flex-direction:column;gap:18px;">
-      <div style="display:flex;align-items:center;gap:22px;padding:26px 30px;border-radius:16px;background:rgba(14,20,36,0.04);border:1px solid rgba(14,20,36,0.10);"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B08544;font-weight:600;">1</span><span style="font-size:28px;font-weight:500;">Le describo el flujo en lenguaje natural</span></div>
-      <div style="display:flex;align-items:center;gap:22px;padding:26px 30px;border-radius:16px;background:rgba(14,20,36,0.04);border:1px solid rgba(14,20,36,0.10);"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B08544;font-weight:600;">2</span><span style="font-size:28px;font-weight:500;">Propone el módulo y lo escribe</span></div>
-      <div style="display:flex;align-items:center;gap:22px;padding:26px 30px;border-radius:16px;background:rgba(14,20,36,0.04);border:1px solid rgba(14,20,36,0.10);"><span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#B08544;font-weight:600;">3</span><span style="font-size:28px;font-weight:500;">Yo lo ajusto, lo pruebo y decido</span></div>
-      <p style="font-size:26px;color:#67728A;margin:14px 4px 0;line-height:1.45;">La IA no reemplaza entender el problema. <span style="color:#0E1424;font-weight:600;">Lo acelera.</span></p>
+    <!-- RIGHT · review -->
+    <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:22px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;background:#161616;padding:8px 18px;border-radius:100px;font-weight:600;">Cómo lo reviso</span>
+        <span style="font-size:24px;color:#67728A;">sin concesiones</span>
+      </div>
+      <div style="flex:1;border-radius:18px;background:#FFFFFF;border:1px solid #E2E6EF;box-shadow:0 24px 60px rgba(14,20,36,0.10);padding:28px 32px;display:flex;flex-direction:column;gap:15px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:0.1em;text-transform:uppercase;color:#9AA1B0;">Intento 1</div>
+        <div style="display:flex;align-items:center;font-size:25px;color:#3C4456;"><span style="color:#C0392B;font-weight:700;margin-right:14px;">✗</span>usó otra paleta<span style="margin-left:auto;color:#C0392B;font-weight:600;">rehacer</span></div>
+        <div style="display:flex;align-items:center;font-size:25px;color:#3C4456;"><span style="color:#C0392B;font-weight:700;margin-right:14px;">✗</span>faltó el teclado<span style="margin-left:auto;color:#C0392B;font-weight:600;">rehacer</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:0.1em;text-transform:uppercase;color:#9AA1B0;margin-top:8px;">Intento 2</div>
+        <div style="display:flex;align-items:center;font-size:25px;color:#3C4456;"><span style="color:#1E874B;font-weight:700;margin-right:14px;">✓</span>zonas y nombres correctos</div>
+        <div style="display:flex;align-items:center;font-size:25px;color:#3C4456;"><span style="color:#1E874B;font-weight:700;margin-right:14px;">✓</span>1:1 con el diseño</div>
+        <div style="display:flex;align-items:center;font-size:25px;color:#3C4456;"><span style="color:#1E874B;font-weight:700;margin-right:14px;">✓</span>pasa mis pruebas</div>
+        <div style="margin-top:auto;padding-top:16px;"><span style="display:inline-flex;align-items:center;gap:10px;font-size:24px;font-weight:600;color:#161616;background:rgba(193,160,98,0.18);border:1px solid rgba(193,160,98,0.45);padding:12px 22px;border-radius:100px;">→ Recién ahí, aprobado</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -697,21 +718,47 @@
   </div>
   <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:74px;line-height:1.05;letter-spacing:-0.02em;margin:34px 0 6px;position:relative;z-index:1;">Los agentes no son <span style="color:#C1A062;">magia</span></h2>
   <p style="font-size:31px;color:#C9C2B4;margin:0;position:relative;z-index:1;">Rinden cuando les das tres cosas.</p>
-  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1;margin-top:40px;">
-    <div style="display:flex;flex-direction:column;padding:40px 34px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
+  <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1;margin-top:30px;">
+    <!-- Card 01 -->
+    <div style="display:flex;flex-direction:column;padding:36px 32px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#C1A062;letter-spacing:0.08em;">01</span>
-      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;margin:18px 0 14px;">Contexto y memoria</div>
-      <div style="font-size:26px;color:#C9C2B4;line-height:1.45;margin-top:auto;">Le dejo las decisiones escritas. Las lee antes de tocar nada — recuerda entre sesiones y no reinventa.</div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;margin:14px 0 12px;">Contexto y memoria</div>
+      <div style="font-size:25px;color:#C9C2B4;line-height:1.4;">Le dejo las decisiones escritas. Las lee antes de tocar nada.</div>
+      <div style="flex:1;min-height:22px;"></div>
+      <div style="border-radius:14px;background:rgba(0,0,0,0.26);border:1px solid rgba(193,160,98,0.20);padding:20px 22px;font-family:'IBM Plex Mono',monospace;">
+        <div style="font-size:19px;letter-spacing:0.1em;text-transform:uppercase;color:#8E8678;margin-bottom:14px;">lee primero ▾</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:22px;color:#D7CFBD;">
+          <div><span style="color:#C1A062;">✓</span> decisiones.md</div>
+          <div><span style="color:#C1A062;">✓</span> ADR · multi-tenant</div>
+          <div><span style="color:#C1A062;">✓</span> índice del proyecto</div>
+        </div>
+      </div>
     </div>
-    <div style="display:flex;flex-direction:column;padding:40px 34px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
+    <!-- Card 02 -->
+    <div style="display:flex;flex-direction:column;padding:36px 32px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#C1A062;letter-spacing:0.08em;">02</span>
-      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;margin:18px 0 14px;">Límites claros</div>
-      <div style="font-size:26px;color:#C9C2B4;line-height:1.45;margin-top:auto;">Puede <span style="color:#F4F1EA;font-weight:600;">mirar</span> lo que ya usan los clientes, pero no tocarlo. Lo irreversible lo aprueba un humano.</div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;margin:14px 0 12px;">Límites claros</div>
+      <div style="font-size:25px;color:#C9C2B4;line-height:1.4;">El agente trabaja con red de seguridad — y un humano arriba.</div>
+      <div style="flex:1;min-height:22px;"></div>
+      <div style="border-radius:14px;background:rgba(0,0,0,0.26);border:1px solid rgba(193,160,98,0.20);padding:20px 22px;font-family:'IBM Plex Mono',monospace;">
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:22px;color:#D7CFBD;margin-bottom:12px;"><span>Mirar producción</span><span style="color:#6FCF97;">✓ permitido</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:22px;color:#D7CFBD;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.08);"><span>Tocar producción</span><span style="color:#E08585;">✗ bloqueado</span></div>
+        <div style="font-size:20px;color:#9A9282;margin-top:12px;line-height:1.4;">Lo irreversible → lo aprueba un humano</div>
+      </div>
     </div>
-    <div style="display:flex;flex-direction:column;padding:40px 34px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
+    <!-- Card 03 -->
+    <div style="display:flex;flex-direction:column;padding:36px 32px;border-radius:22px;background:rgba(193,160,98,0.09);border:1px solid rgba(193,160,98,0.32);">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#C1A062;letter-spacing:0.08em;">03</span>
-      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;margin:18px 0 14px;">Un proceso</div>
-      <div style="font-size:25px;color:#C9C2B4;line-height:1.5;margin-top:auto;">Planificar <span style="color:#8E8678;">→</span> delegar <span style="color:#8E8678;">→</span> revisar <span style="color:#8E8678;">→</span> probar <span style="color:#8E8678;">→</span> publicar.</div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;margin:14px 0 12px;">Un proceso</div>
+      <div style="font-size:25px;color:#C9C2B4;line-height:1.4;">Nada llega a los clientes sin pasar por cada paso.</div>
+      <div style="flex:1;min-height:22px;"></div>
+      <div style="border-radius:14px;background:rgba(0,0,0,0.26);border:1px solid rgba(193,160,98,0.20);padding:22px 22px;display:flex;flex-direction:column;gap:13px;">
+        <div style="display:flex;align-items:center;gap:14px;"><span style="width:26px;height:26px;border-radius:50%;background:rgba(193,160,98,0.18);border:1px solid #C1A062;color:#C1A062;font-family:'IBM Plex Mono',monospace;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">1</span><span style="font-size:23px;color:#E7DEC9;">Planificar</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span style="width:26px;height:26px;border-radius:50%;background:rgba(193,160,98,0.18);border:1px solid #C1A062;color:#C1A062;font-family:'IBM Plex Mono',monospace;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">2</span><span style="font-size:23px;color:#E7DEC9;">Delegar a subagentes</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span style="width:26px;height:26px;border-radius:50%;background:rgba(193,160,98,0.18);border:1px solid #C1A062;color:#C1A062;font-family:'IBM Plex Mono',monospace;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">3</span><span style="font-size:23px;color:#E7DEC9;">Revisar</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span style="width:26px;height:26px;border-radius:50%;background:rgba(193,160,98,0.18);border:1px solid #C1A062;color:#C1A062;font-family:'IBM Plex Mono',monospace;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">4</span><span style="font-size:23px;color:#E7DEC9;">Probar</span></div>
+        <div style="display:flex;align-items:center;gap:14px;"><span style="width:26px;height:26px;border-radius:50%;background:#C1A062;color:#161616;font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;">5</span><span style="font-size:23px;color:#F4F1EA;font-weight:600;">Publicar</span></div>
+      </div>
     </div>
   </div>
   <div style="display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:34px;position:relative;z-index:1;">
